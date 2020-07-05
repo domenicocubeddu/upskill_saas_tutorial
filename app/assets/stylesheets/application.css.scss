@@ -13,10 +13,26 @@
  *= require_tree .
  *= require_self
  */
+html {
+    height: 100%;
+}
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
 h1, h2, h3 {
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #c2e59c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(#64b3f4, #c2e59c);
+  background: -moz-linear-gradient(#64b3f4, #c2e59c);
+  background: -o-linear-gradient(#64b3f4, #c2e59c);
+  background: linear-gradient(#64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  border:none;
 }
