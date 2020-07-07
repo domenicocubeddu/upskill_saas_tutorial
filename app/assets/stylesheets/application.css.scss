@@ -30,6 +30,27 @@ h1, h2, h3 {
 
 }
 
+.navbar-default .navbar-brand{
+  color:white;
+  font-weight:bolder;
+  font-size: 2.5rem;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:white;
+  font-weight:bolder;
+  font-size: 2rem;
+}
+
+.navbar-default .navbar-brand:hover{
+  color: #8360c3;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color:#2ebf91;
+}
+
+
 .navbar {
   border: none;
 }
@@ -40,5 +61,3 @@ h1, h2, h3 {
   padding-top: 50px;
   padding-bottom: 100px;
 }
-
-
