@@ -7,11 +7,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # Otherwise Devise signs up user as usual.
   def create
     super do |resource|
-      if params[:plan] 
+      if params[:plan]
         resource.plan_id = params[:plan]
-        if resource.plan_id == 2
+        if resource.plan_id == '2'
           resource.save_with_subscription
-        else 
+        else
           resource.save
         end
       end
